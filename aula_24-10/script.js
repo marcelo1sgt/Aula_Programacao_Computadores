@@ -9,7 +9,6 @@
    }
 
    var operacao = prompt("Escolha uma das seguintes operações: SOMA [ + ] ou MULTIPLICAÇÃO [ * ].")
-
    var total = 0;
    i = 0;
    
@@ -17,10 +16,10 @@
     while (i < numeros.length) {
         total += numeros[i];
         i++;
-        console.log("Os números digitados foram " + numeros + " e o valor da operação SOMA é " + total)
     }
+    console.log("Os números digitados foram " + numeros + " e o valor da operação SOMA é " + total)
    } 
-   if else (operacao == "*") {
+   else if (operacao == "*") {
     total = 1
     i = 0
     while (i < numeros.length) {
