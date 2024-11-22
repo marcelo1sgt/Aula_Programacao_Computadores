@@ -5,6 +5,8 @@
  3 - X-Bacon - R$ 20
 
  Solicite um código de produto, percorra a lista e exiba seu dados 
+
+ 
  Elabore um programa de cadastro de bebidas com código, nome e valor;
  Ao final, percorra a lista e exiba os dados.
 
