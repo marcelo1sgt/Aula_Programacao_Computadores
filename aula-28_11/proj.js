@@ -1,5 +1,5 @@
 /* Elabore um programa para armazenamento e exibição de chamados de manutenção, com Data, Cliente, Local e descrição. */
-var listaChamados = [];
+/*var listaChamados = [];
 var i = 0;
 
 
@@ -31,3 +31,54 @@ while(continua == 's'){
 		continua = prompt("Deseja fazer novas tarefas? Digite s para confirmar:");
 }
 
+*/
+
+
+var list = [];
+
+var i = 0;
+
+function adicionarChamado(){
+
+	var chamado = {};
+
+chamado.data = prompt(`Digite a DATA: `);
+
+chamado.cliente = prompt(`Digite o nome do CLIENTE: `);
+
+chamado.local = prompt(`Digite o LOCAL: `);
+
+chamado.descricao = prompt(`Descreva o PROBLEMA: `);
+
+list[i] = chamado;
+
+}
+
+
+function listChamado(){
+	console.log(`= = = = = LISTA DE CHAMADOS = = = = =`);
+
+	for(var i = 0; i < list.length; i++) {
+
+	console.log(`DATA: `, list[i].data);
+
+	console.log(`Nome do CLIENTE: `, list[i].cliente);
+
+	console.log(`LOCAL: `, list[i].local);
+
+	console.log(`Descrição do PROBLEMA: `, list[i].descricao);
+
+	}
+
+}
+
+var continua = `s`;
+
+while(continua == `s`) {
+	var opcao = parseInt(prompt(`O que deseja fazer?\n1 - ADICIONAR chamado\n2 - LISTAR chamados`));
+
+	if(opcao == 1) {adicionarChamado();} else {listChamado();}
+
+	continua = prompt(`Deseja realizar novas TAREFAS? Digite [ s ] para confirmar:`);
+
+}
